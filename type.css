@@ -1,0 +1,10 @@
+@font-face {
+  font-family: JeanLuc;
+  src: url(fonts/JeanLuc-Thin.otf) format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");

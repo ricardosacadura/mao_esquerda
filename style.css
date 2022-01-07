@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin-left: 2%;
+  top: 20%;
+  width: 70%;
+  font-family: JeanLuc;
+  position: fixed;
+  color: blue;
+}
+
+h1 {
+  font-size: 12rem;
+  line-height: 75%;
+}
+
+.grelha {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: JeanLuc;
+  margin-left: 2%;
+}
+
+ul {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+
+  font-size: 8rem;
+  color: red;
+  mix-blend-mode: multiply;
+}
+
+ul:hover {
+  opacity: 1;
+}
+
+ul:nth-child(1) {
+  top: 0%;
+}
+
+ul:nth-child(2) {
+  top: 20%;
+}
+ul:nth-child(3) {
+  top: 40%;
+}
+ul:nth-child(4) {
+  top: 60%;
+}
+ul:nth-child(5) {
+  top: 80%;
+}
+
+#gosto:after {
+  content: "";
+  animation: gosto 5s linear infinite;
+}
+@keyframes gosto {
+  0% {
+    content: "Arte";
+  }
+  10% {
+    content: "História";
+  }
+  20% {
+    content: "Politica";
+  }
+  30% {
+    content: "Copos";
+  }
+  40% {
+    content: "Fast Food";
+  }
+  50% {
+    content: "Cinema";
+  }
+  60% {
+    content: "Amigos";
+  }
+  70% {
+    content: "Chuva";
+  }
+  80% {
+    content: "Filosofia";
+  }
+  90% {
+    content: "Literatura";
+  }
+  100% {
+    content: "Arte";
+  }
+}
