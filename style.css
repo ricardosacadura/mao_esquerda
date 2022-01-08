@@ -6,20 +6,49 @@
 body {
   width: 100%;
   height: 100%;
+  background-color: #ebebe8;
 }
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    mix-blend-mode: multiply;
+    z-index: 2;
+  }
+  
+  
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
+  
+  img:hover{
+    width: 4.5rem;
+    height: 4.5rem;
+    transition-duration: 0.25s;
+  }
+  
 
 .title {
   margin-left: 2%;
-  top: 20%;
+  top: 22%;
   width: 70%;
-  font-family: JeanLuc;
   position: fixed;
-  color: blue;
+  color: rgb(44, 44, 228);
 }
 
 h1 {
+  font-family: JeanLuc;
   font-size: 12rem;
   line-height: 75%;
+}
+
+#local {
+  font-family: HK Grotesk;
+  font-weight: medium;
+  font-size: 2rem;
+  padding-top: 1rem;
 }
 
 .grelha {
@@ -28,7 +57,7 @@ h1 {
   flex-direction: column;
   position: relative;
   font-family: JeanLuc;
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 ul {
@@ -37,14 +66,15 @@ ul {
   display: flex;
   align-items: center;
   opacity: 0;
-
   font-size: 8rem;
-  color: red;
+  color: rgb(44, 43, 43);
   mix-blend-mode: multiply;
 }
 
 ul:hover {
   opacity: 1;
+  padding-left: 1%;
+  transition-duration: 0.25s;
 }
 
 ul:nth-child(1) {
@@ -68,38 +98,39 @@ ul:nth-child(5) {
   content: "";
   animation: gosto 5s linear infinite;
 }
+
 @keyframes gosto {
   0% {
-    content: "Arte";
+    content: "ARTE";
   }
   10% {
-    content: "História";
+    content: "HISTÓRIA";
   }
   20% {
-    content: "Politica";
+    content: "POLÍTICA";
   }
   30% {
-    content: "Copos";
+    content: "COPOS";
   }
   40% {
-    content: "Fast Food";
+    content: "FAST FOOD";
   }
   50% {
-    content: "Cinema";
+    content: "CINEMA";
   }
   60% {
-    content: "Amigos";
+    content: "AMIGOS";
   }
   70% {
-    content: "Chuva";
+    content: "CHUVA";
   }
   80% {
-    content: "Filosofia";
+    content: "FILSOFIA";
   }
   90% {
-    content: "Literatura";
+    content: "LITERATURA";
   }
   100% {
-    content: "Arte";
+    content: "ARTE";
   }
 }
