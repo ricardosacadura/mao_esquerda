@@ -10,25 +10,23 @@ body {
 }
 
 .icon {
-    width: 4rem;
-    height: 4rem;
-    position: absolute;
-    mix-blend-mode: multiply;
-    z-index: 2;
-  }
-  
-  
-  img {
-    height: 4rem;
-    width: 4rem;
-  }
-  
-  img:hover{
-    width: 4.5rem;
-    height: 4.5rem;
-    transition-duration: 0.25s;
-  }
-  
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+.atalhos {
+  height: 4rem;
+  width: 4rem;
+}
+
+.atalhos:hover {
+  width: 5rem;
+  height: 5rem;
+  transition-duration: 0.25s;
+}
 
 .title {
   margin-left: 2%;
@@ -66,7 +64,7 @@ ul {
   display: flex;
   align-items: center;
   opacity: 0;
-  font-size: 8rem;
+  font-size: 7rem;
   color: rgb(44, 43, 43);
   mix-blend-mode: multiply;
 }
@@ -74,6 +72,7 @@ ul {
 ul:hover {
   opacity: 1;
   padding-left: 1%;
+  font-size: 8rem;
   transition-duration: 0.25s;
 }
 
@@ -133,4 +132,23 @@ ul:nth-child(5) {
   100% {
     content: "ARTE";
   }
+}
+
+.foto {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  width: 35%;
+  z-index: -2;
+}
+
+img[alt="photo-01"] {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+  transform: rotate(5deg);
+}
+
+img[alt="photo-01"]:hover {
+  transition-duration: 0.25s;
 }

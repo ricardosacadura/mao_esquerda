@@ -6,15 +6,11 @@ function RandomObjectMover(obj, container) {
     this.$object = obj;
     this.$container = container;
     this.container_is_window = container === window;
-    this.pixels_per_second = 250;
+    this.pixels_per_second = 80;
     this.current_position = { x: 0, y: 0 };
     this.is_running = false;
 }
 
-// Set the speed of movement in Pixels per Second.
-RandomObjectMover.prototype.setSpeed = function (pxPerSec) {
-    this.pixels_per_second = pxPerSec;
-}
 
 RandomObjectMover.prototype._getContainerDimensions = function () {
     if (this.$container === window) {
@@ -53,7 +49,7 @@ RandomObjectMover.prototype._moveOnce = function () {
     var delta = this._calcDelta(this.current_position, next);
 
     // Speed of this transition, rounded to 2DP
-    var speed = Math.round((delta / this.pixels_per_second) * 50) / 30;
+    var speed = Math.round((delta / this.pixels_per_second) * 100) / 200;
 
     //console.log(this.current_position, next, delta, speed);
 
@@ -110,3 +106,5 @@ x.start();
 y.start();
 f.start();
 r.start();
+
+//------------Código apropriado de https://jsfiddle.net/bf9nv1q6/-----------//
