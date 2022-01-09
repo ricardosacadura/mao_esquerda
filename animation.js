@@ -1,4 +1,18 @@
 
+const inforDiv = document.getElementById("info");
+const btn = document.getElementById("toggle");
+
+btn.onclick = function () {
+    if (inforDiv.style.display !== "block") {
+        inforDiv.style.display = "block";
+        btn.innerHTML = "Fechar [X]";
+    } else {
+        inforDiv.style.display = "none";
+        btn.innerHTML = "Quem sou?";
+    }
+};
+
+
 
 //------------Código apropriado de https://jsfiddle.net/bf9nv1q6/-----------//
 
